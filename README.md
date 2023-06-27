@@ -1,0 +1,2 @@
+# AppCashManager
+CashManagerApp
