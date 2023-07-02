@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.cashmanager.ui.user.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_dashboardFragment"
+            app:destination="@id/menuFragmentDest"
+            app:enterAnim="@animator/enter_from_right"
+            app:exitAnim="@animator/exit_to_left"
+            app:popEnterAnim="@animator/enter_from_left"
+            app:popExitAnim="@animator/exit_to_right"
+            />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@animator/enter_from_right"
+            app:exitAnim="@animator/exit_to_left"
+            app:popEnterAnim="@animator/enter_from_left"
+            app:popExitAnim="@animator/exit_to_right"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.cashmanager.ui.user.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@animator/enter_from_left"
+            app:exitAnim="@animator/exit_to_right"
+            app:popEnterAnim="@animator/enter_from_right"
+            app:popExitAnim="@animator/exit_to_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragmentDest"
+        android:name="com.example.cashmanager.ui.dashboard.DashboardFragment"
+        android:label="menuFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_sendFragment"
+            app:destination="@id/outcomeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/accelerate_interpolator"
+            app:popExitAnim="@android:anim/accelerate_decelerate_interpolator" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_receiveFragment"
+            app:destination="@id/incomeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/accelerate_interpolator"
+            app:popExitAnim="@android:anim/accelerate_decelerate_interpolator" />
+        <action
+            android:id="@+id/action_dashboardFragmentDest_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/accelerate_interpolator"
+            app:popExitAnim="@android:anim/accelerate_decelerate_interpolator" />
+        <action
+            android:id="@+id/action_dashboardFragmentDest_to_assetFragment"
+            app:destination="@id/saldoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/accelerate_interpolator"
+            app:popExitAnim="@android:anim/accelerate_decelerate_interpolator" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomeFragment"
+        android:name="com.example.cashmanager.ui.receive.ReceiveFragment"
+        android:label="IncomeFragment"
+        tools:layout="@layout/fragment_receive">
+        <action
+            android:id="@+id/action_receiveFragment_to_dashboardFragment"
+            app:destination="@id/menuFragmentDest"
+            app:enterAnim="@animator/enter_from_left"
+            app:exitAnim="@animator/exit_to_right"
+            app:popEnterAnim="@animator/enter_from_right"
+            app:popExitAnim="@animator/exit_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/outcomeFragment"
+        android:name="com.example.cashmanager.ui.send.SendFragment"
+        android:label="outcomeFragment"
+        tools:layout="@layout/fragment_send">
+        <action
+            android:id="@+id/action_sendFragment_to_dashboardFragment"
+            app:destination="@id/menuFragmentDest"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@animator/exit_to_right"
+            app:popEnterAnim="@animator/enter_from_right"
+            app:popExitAnim="@animator/exit_to_left" />
+        <action
+            android:id="@+id/action_sendFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@animator/exit_to_right"
+            app:popEnterAnim="@animator/enter_from_right"
+            app:popExitAnim="@animator/exit_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/saldoFragment"
+        android:name="com.example.cashmanager.ui.asset.AssetFragment"
+        android:label="SaldoFragment"
+        tools:layout="@layout/fragment_asset">
+        <action
+            android:id="@+id/action_assetFragment_to_dashboardFragmentDest"
+            app:destination="@id/menuFragmentDest"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@animator/enter_from_right"
+            app:popExitAnim="@animator/exit_to_left" />
+        <argument
+            android:name="positionSelected"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

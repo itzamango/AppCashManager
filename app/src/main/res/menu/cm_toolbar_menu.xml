@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">    <item
+        android:id="@+id/search"
+        android:icon="@drawable/cm_search"
+        android:title="@string/cm_search_title"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/cm_filter"
+        android:title="@string/cm_filter_title"
+        app:showAsAction="always" />
+
+</menu>

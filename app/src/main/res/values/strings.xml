@@ -1,0 +1,101 @@
+<resources>
+    <string name="cm_app_name">CashManager</string>
+
+    <!-- Strings Login & Register -->
+    <string name="login">Welcome</string>
+    <string name="signuphere"><u>No tienes una cuenta? Registrate aqui</u></string>
+    <string name="loginButton">Iniciar Sesion</string>
+    <string name="fullname">Nombre</string>
+    <string name="email">E-mail</string>
+    <string name="username">Nombre de Usuario</string>
+    <string name="password">Password</string>
+
+    <string name="confirmPassword">Confirmar Password</string>
+    <string name="createAccount">Crear Cuenta</string>
+    <string name="signup">Registrarse</string>
+
+
+    <string name="loginhere"><u>Ya tienes una cuenta? Inicia Sesion Aqui</u></string>
+
+    <!-- Strings related to dashboard -->
+    <string name="cm_hint_username">Username</string>
+    <string name="cm_hint_password">Password</string>
+    <string name="cm_button_login">Inicia Sesion</string>
+    <string name="cm_button_cancel">Cancelar</string>
+    <string name="cm_error_password">Error en el Password</string>
+    <string name="cm_helper_password">Password de al menos 8 caracteres</string>
+    <string name="cm_forgotpass">Olvidaste tu password?</string>
+
+    <string name="cm_search_title">Buscar</string>
+    <string name="cm_filter_title">Filtrar</string>
+
+    <!-- Strings menu principal -->
+    <string name="cm_balance"> $200 </string>
+    <string name="cm_send_button">Enviar</string>
+    <string name="cm_receive_button">Ingresar</string>
+    <string name="cm_asset_button">Moneda</string>
+    <string name="cm_activity_button">Movimientos</string>
+
+
+    <!-- Strings enviar outcomeFragment -->
+    <string name="cm_text_view_asset"> Moneda:</string>
+    <string name="cm_text_view_amount"> Cantidad:</string>
+    <string name="cm_text_view_address"> Destino:</string>
+    <string name="cm_network_fee">Tarifa:</string>
+    <string name="cm_networ_fee_amount">0.01</string>
+    <string name="cm_total_send">Total:</string>
+    <string name="cm_total_send_amount">0.01</string>
+    <string name="cm_amount_hint"> Ingrese cantidad</string>
+    <string name="cm_address_hint"> Ingrese destino</string>
+    <string name="cm_asset_hint"> Seleccion de Moneda</string>
+    <string name="cm_btn_cancel"> Cancelar</string>
+    <string name="cm_btn_next"> Siguiente</string>
+    <string name="cm_amount_error"> Selecciona otra opcion</string>
+
+    <!-- Strings ingresos incomeFragment -->
+    <string name="cm_address_text"> </string>
+    <string name="cm_text_view_asset_receive"> Moneda:</string>
+
+    <!-- Strings menu saldo aseFragment -->
+    <string name="cm_no_activities"> Sin actividad reciente</string>
+
+
+    <!-- USERS CHANNEL -->
+    <string name="channel_courses">Usuarios</string>
+    <string name="courses_description">Notificaciones del usuario</string>
+
+    <!-- CANAL OTROS -->
+    <string name="channel_others">Diversos</string>
+    <string name="others_description">Diversas notificaciones</string>
+
+    <!-- Simple notifications -->
+    <string name="simple_title">CashManager</string>
+    <string name="simple_body">¡Esta es una notificacion de CashManager!</string>
+
+
+    <!--    Appbar options-->
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Cerrar</string>
+
+
+    <string name="log_out_txt">Cerrar Sesion</string>
+
+    <!--    Strings related to splash screen-->
+    <string name="cm_splash_copyright">Beta 1.0.1</string>
+
+    <string name="cm_logo_content_description">CashManager Logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    QR generation notifications notifications-->
+    <string name="qr_notifications">QR generator</string>
+    <string name="qr_description">Notificaciones de qr</string>
+    <string name="qr_generator_body">¡Esta listo el QR!</string>
+
+    <!-- Progress Transactions notifications -->
+    <string name="transactions_title"> </string>
+    <string name="transaction_description">Procesando...</string>
+    <string name="transaction_completed">Envio satisfactorio</string>
+    <string name="sign_in_google">Sign In with Google</string>
+
+</resources>
